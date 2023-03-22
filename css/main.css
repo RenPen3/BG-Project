@@ -20,6 +20,10 @@ li {
     display: none;
 }
 
+.main-menu .fa-bars, .main-menu .fa-x {
+    display: none;
+}
+
 
 
 
@@ -42,8 +46,8 @@ li {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 40px;
-    max-width: 1600px;
+    padding: 20px 40px;
+    max-width: 1200px;
 }
 
 .nav-wrapper .logo img {
@@ -83,7 +87,7 @@ li {
 
 /* Hero Section */
 
-.main-menu .fa-bars {
+.main-menu .fa-bars, .main-menu .fa-x {
     display: none;
 }
 
@@ -578,7 +582,7 @@ li {
 
 @media screen and (max-width: 1024px) {
 
-.main-menu .fa-bars {display: none;}
+.main-menu .fa-bars, .main-menu .fa-x  {display: none;}
 
 .main-menu .menu-list {display: flex;}
 
@@ -799,6 +803,26 @@ li {
     display: none;
 }
 
+.mobile-container.active {
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 90%;
+    height: 900px;
+    background-color:rgba(0, 211, 215, 1);
+    z-index: 0;
+    animation: slide .4s ease-in-out;
+}
+
+@keyframes slide {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }    
+}
+
 
 
 .mobile-container .fa-bars {
@@ -818,6 +842,19 @@ li {
     display: block;
     color: #fff;
     font-size: 24px;
+    z-index: 2;
+
+}
+
+.main-menu .fa-bars:hover, .main-menu .fa-x:hover {
+    cursor: pointer;
+}
+
+.main-menu .fa-x {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    z-index: 2;
 }
 
 .nav-wrapper {
