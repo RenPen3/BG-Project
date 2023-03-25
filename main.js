@@ -6,6 +6,7 @@ const bars = document.querySelector('.fa-bars');
 ham.addEventListener('click', () => {
     menu.classList.toggle('active');
     x.style.display = 'flex';
+    x.style.color = '#00d3d7'
     bars.style.display = 'none';
 });
 
