@@ -249,6 +249,10 @@ li {
     background-color: gold;
 }
 
+.even {
+    color: #000 !important;
+}
+
 .product-box img {
     background-position: center center;
     background-repeat: no-repeat;
@@ -274,7 +278,6 @@ li {
 
 .product-list h1 {
     color: #fff;
-    z-index: 99;
     margin: 20px 0 0 0;
 }
 
@@ -284,8 +287,6 @@ li {
     color: #fff;
     border-bottom: 2px solid #fff;
 }
-
-
 
 
 .sidebar {
